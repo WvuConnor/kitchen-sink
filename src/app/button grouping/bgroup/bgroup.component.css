@@ -1,13 +1,13 @@
-.btn-group button {
+.btn-toolbar button {
     border: 1px solid grey; 
     padding: 10px 10px;
     cursor: pointer;
     float: center; 
   }
-  .btn-group button:not(:last-child) {
+  .btn-toolbar button:not(:last-child) {
     border-right: none;
   }
-  .btn-group:after {
+  .btn-toolbar:after {
     content: "";
     clear: both;
     display: table;
