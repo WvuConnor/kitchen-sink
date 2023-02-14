@@ -7,6 +7,7 @@ import { TopnavComponent } from './Navagation/topnav/topnav.component';
 import { BgroupComponent } from './button grouping/bgroup/bgroup.component';
 import { CardComponent } from './cards/card/card.component';
 import { Vav2Component } from './secondtopnav/vav2/vav2.component';
+import { ColapseComponent } from './colapse/colapse/colapse.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { Vav2Component } from './secondtopnav/vav2/vav2.component';
     TopnavComponent,
     BgroupComponent,
     CardComponent,
-    Vav2Component
+    Vav2Component,
+    ColapseComponent
   ],
   imports: [
     BrowserModule,
