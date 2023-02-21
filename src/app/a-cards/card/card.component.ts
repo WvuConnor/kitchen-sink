@@ -7,7 +7,6 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 
 export class CardComponent implements OnInit {
-  @Input() price: number;
   @Input() imgDescription: string;
   @Input() description: string;
   @Input() img: string;
@@ -15,7 +14,6 @@ export class CardComponent implements OnInit {
   constructor() {
     this.img ="No img found";
     this.imgDescription = "No description found"
-    this.price = 0;
     this.description = "No information found"
    }
 

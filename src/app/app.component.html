@@ -5,18 +5,11 @@
 <app-colapse>Loading...</app-colapse>
 
 <div class="container-fluid d-flex">
-   
-    <app-card class="mx-2" img="https://i.kym-cdn.com/entries/icons/mobile/000/028/924/cover2.jpg" [price]="69" imgDescription="pain" description="aaaaaaaaaaa">
-        Loading...
-    </app-card>
-
-    <app-card class="mx-2" img="https://i.kym-cdn.com/entries/icons/mobile/000/028/924/cover2.jpg" [price]="69" imgDescription="pain" description="aaaaaaaaaaa">
-        Loading...
-    </app-card>
-
-    <app-card class="mx-2" img="https://i.kym-cdn.com/entries/icons/mobile/000/028/924/cover2.jpg" [price]="69" imgDescription="pain" description="aaaaaaaaaaa">
-        Loading...
-    </app-card>
+    <div *ngFor="let product of products">
+        <app-card class="mx-2" img={{product.img}} description={{product.description}}>
+            Loading...
+        </app-card>
+    </div>
 </div>
 
 
