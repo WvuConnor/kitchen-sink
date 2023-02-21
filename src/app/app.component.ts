@@ -12,9 +12,9 @@ export class AppComponent {
   products: ProductModel[] = [];
 
   constructor(){
-    for(var product in mock_list){
-      //console.log(product);
-      //this.products.push(product);
+    for(var product of mock_list){
+      console.log(product);
+      this.products.push(product);
     }
     //code to fetch code from backend using http
   }
