@@ -1,3 +1,13 @@
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-card',
+  templateUrl: './card.component.html',
+  styleUrls: ['./card.component.css']
+})
+export class CardComponent {
+
+}
 /*
 import { Component, Input, OnInit } from '@angular/core';
 
@@ -44,6 +54,7 @@ export const mock_list = [
       imgDescription: "galaxy 3"
   }
 ];
+*/
 export class ProductModel {
   price: number;
   imgDescription: string;
@@ -58,4 +69,3 @@ export class ProductModel {
       this.price = price;
   }
 }
-*/
