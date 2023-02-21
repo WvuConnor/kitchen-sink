@@ -1,14 +1,3 @@
-import { Component } from '@angular/core';
-
-@Component({
-  selector: 'app-card',
-  templateUrl: './card.component.html',
-  styleUrls: ['./card.component.css']
-})
-export class CardComponent {
-
-}
-/*
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
@@ -16,6 +5,7 @@ import { Component, Input, OnInit } from '@angular/core';
   templateUrl: './card.component.html',
   styleUrls: ['./card.component.css']
 })
+
 export class CardComponent implements OnInit {
   @Input() price: number;
   @Input() imgDescription: string;
@@ -32,40 +22,4 @@ export class CardComponent implements OnInit {
   ngOnInit(): void {
   }
 
-}
-
-export const mock_list = [
-  {
-      img: "https://www.nasa.gov/sites/default/files/thumbnails/image/hubble_donotielloii_potw2306a.jpg",
-      description: "yo wuddup",
-      price: 99.99,
-      imgDescription: "galaxy 2"
-  },
-  {
-      img: "https://www.nasa.gov/sites/default/files/thumbnails/image/hubble_ugc7983_potw2303a.jpg",
-      description: "yo wuddup 22",
-      price: 998.99,
-      imgDescription: "galaxy 3"
-  },
-  {
-      img: "https://www.nasa.gov/sites/default/files/thumbnails/image/hubble_ugc7983_potw2303a.jpg",
-      description: "yo wuddup 22",
-      price: 998.99,
-      imgDescription: "galaxy 3"
-  }
-];
-*/
-export class ProductModel {
-  price: number;
-  imgDescription: string;
-  description: string;
-  img: string;
-
-  constructor(price: number, imgDescription: string, description: string, img: string){
-      this.description =description;
-      this.img =img;
-      this.imgDescription = imgDescription;
-      this.description=description;
-      this.price = price;
-  }
 }

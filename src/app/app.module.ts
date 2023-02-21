@@ -17,7 +17,7 @@ import { CardComponent } from './a-cards/card/card.component';
     BgroupComponent,
     CardComponent,
     Vav2Component,
-    ColapseComponent
+    ColapseComponent,
   ],
   imports: [
     BrowserModule,
