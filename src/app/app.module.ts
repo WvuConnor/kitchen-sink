@@ -5,10 +5,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TopnavComponent } from './Navagation/topnav/topnav.component';
 import { BgroupComponent } from './button grouping/bgroup/bgroup.component';
-//import { CardComponent } from './cards/card/card.component';
 import { Vav2Component } from './secondtopnav/vav2/vav2.component';
 import { ColapseComponent } from './colapse/colapse/colapse.component';
 import { CardComponent } from './a-cards/card/card.component';
+import { TnavlayoutComponent } from './layout/tnavlayout/tnavlayout.component';
+import { HomeComponent } from './home-layout/home/home.component';
+import { FooterComponent } from './footer/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +20,9 @@ import { CardComponent } from './a-cards/card/card.component';
     CardComponent,
     Vav2Component,
     ColapseComponent,
+    TnavlayoutComponent,
+    HomeComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
