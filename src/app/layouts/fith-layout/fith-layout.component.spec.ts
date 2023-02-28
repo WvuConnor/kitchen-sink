@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TnavlayoutComponent } from './tnavlayout.component';
+import { FithLayoutComponent } from './fith-layout.component';
 
-describe('TnavlayoutComponent', () => {
-  let component: TnavlayoutComponent;
-  let fixture: ComponentFixture<TnavlayoutComponent>;
+describe('FithLayoutComponent', () => {
+  let component: FithLayoutComponent;
+  let fixture: ComponentFixture<FithLayoutComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ TnavlayoutComponent ]
+      declarations: [ FithLayoutComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(TnavlayoutComponent);
+    fixture = TestBed.createComponent(FithLayoutComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

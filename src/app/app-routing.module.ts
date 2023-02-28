@@ -1,22 +1,21 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './home-layout/home/home.component';
-import { TnavlayoutComponent } from './layout/tnavlayout/tnavlayout.component';
+import { HomeLayoutComponent } from './layouts/home-layout/home-layout.component';
+import { SecondLayoutComponent } from './layouts/second-layout/second-layout.component';
 
-const routes: Routes = [
-  {path: '', component: HomeComponent},
-  {path: 'home', component: HomeComponent},
-  {path: '1', component: TnavlayoutComponent}
-];
+const routes: Routes = [   
+  {
+  path: '',
+  component: HomeLayoutComponent
+ },
+ {
+  path: 'SecondLayout',
+ component: SecondLayoutComponent
+}];
 
 @NgModule({
-  imports: [
-    CommonModule, 
-    RouterModule.forRoot(routes)
-  ],
-  exports: [
-    RouterModule
-  ]
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
 })
 export class AppRoutingModule { }

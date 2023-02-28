@@ -17,5 +17,5 @@ export class AppComponent {
       this.products.push(product);
     }
     //code to fetch code from backend using http
-  }
+  }//take constructor to place on products page
 }
