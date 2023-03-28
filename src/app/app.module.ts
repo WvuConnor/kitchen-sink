@@ -8,13 +8,14 @@ import { BgroupComponent } from './button grouping/bgroup/bgroup.component';
 import { Vav2Component } from './secondtopnav/vav2/vav2.component';
 import { ColapseComponent } from './colapse/colapse/colapse.component';
 import { CardComponent } from './a-cards/card/card.component';
-
 import { FooterComponent } from './footer/footer/footer.component';
 import { HomeLayoutComponent } from './layouts/home-layout/home-layout.component';
 import { SecondLayoutComponent } from './layouts/second-layout/second-layout.component';
 import { ThirdLayoutComponent } from './layouts/third-layout/third-layout.component';
 import { FourthLayoutComponent } from './layouts/fourth-layout/fourth-layout.component';
 import { FithLayoutComponent } from './layouts/fith-layout/fith-layout.component';
+import { HttpClientModule } from "@angular/common/http";
+import { UserInfoComponent } from './user-info/user-info/user-info.component';
 
 @NgModule({
   declarations: [
@@ -30,10 +31,12 @@ import { FithLayoutComponent } from './layouts/fith-layout/fith-layout.component
     ThirdLayoutComponent,
     FourthLayoutComponent,
     FithLayoutComponent,
+    UserInfoComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
