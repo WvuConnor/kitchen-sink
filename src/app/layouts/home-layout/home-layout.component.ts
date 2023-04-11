@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { mock_list } from './mock_list';
 import { ProductModel } from './product.model';
 import { SeriviceComponent } from './service.component';
 
@@ -13,16 +12,15 @@ export class HomeLayoutComponent implements OnInit{
   products: ProductModel[] = [];
 
   constructor(private serivicecomponent: SeriviceComponent){
-    for(var product of mock_list){
-      console.log(product);
-      this.products.push(product);
-    }
   }
 
   ngOnInit(): void {
     this.serivicecomponent.getProducts().subscribe((data: ProductModel []) => {
       console.log("Fetching products");
-      console.log(data);
+      for(var product of data){
+        console.log(product);
+        this.products.push(product);
+      }
     });
 
     
