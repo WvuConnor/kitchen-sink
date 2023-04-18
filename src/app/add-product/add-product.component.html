@@ -3,4 +3,29 @@
 <app-vav2></app-vav2>
 
 <app-bgroup></app-bgroup>
-<p>add-product works!</p>
+<div class="container">
+    <div class="row">
+        <div class="col-8">
+            <form #postForm="ngForm"(ngSubmit)="addProduct(postForm.value)">
+                <div class="input-group">
+                    <span class="input-group-text">Description</span>
+                    <input type="text" class="form-control" ngModel name="Description"><!-- you can cnange the type to password that creates the dots for the pass words-->
+                </div>
+
+                <div class="input-group">
+                    <span class="input-group-text">img</span>
+                    <input type="text" class="form-control" ngModel name="img">
+                </div>
+
+                <div class="input-group">
+                    <span class="input-group-text">imgDescription</span>
+                    <input type="text" class="form-control" ngModel name="imgDescription">
+                </div>
+
+                <button class="btn btn-dark" type="submit">
+                    Add Product
+                </button>
+            </form>
+        </div>
+    </div>
+</div>

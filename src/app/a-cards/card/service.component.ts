@@ -1,6 +1,6 @@
-import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 import { ProductModel } from "./product.model";
+import{ AngularFireDatabase} from '@angular/fire/compat/database';
 
 @Injectable(
     {providedIn: 'root'}
@@ -10,15 +10,18 @@ export class SeriviceComponent{
     private baseUrl:string = "https://flickr-app-30c57-default-rtdb.firebaseio.com/";
     private productsEndpoint: string = "products.json";
 
-    constructor(private http:HttpClient){
+    constructor(private db: AngularFireDatabase){
 
     }
 
     getProducts(){
-        return this.http.get<ProductModel []>(this.baseUrl + this.productsEndpoint);
+        return this.db.list<ProductModel>("products").valueChanges();
     }
     getProduct(index:number){
-        return this.http.get<ProductModel []>(this.baseUrl + 'products' + '/' + index + '.json');
+        
+    }
+    addProduct(product: ProductModel){
+        this.db.list<ProductModel>("products").push(product);
     }
 }
 // can be used in other places 

@@ -1,6 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { ProductModel } from './product.model';
-import { SeriviceComponent } from './service.component';
+import { Component} from '@angular/core';
 
 @Component({
   selector: 'app-home-layout',
@@ -8,21 +6,6 @@ import { SeriviceComponent } from './service.component';
   styleUrls: ['./home-layout.component.css']
 })
 
-export class HomeLayoutComponent implements OnInit{
-  products: ProductModel[] = [];
+export class HomeLayoutComponent{
 
-  constructor(private serivicecomponent: SeriviceComponent){
-  }
-
-  ngOnInit(): void {
-    this.serivicecomponent.getProducts().subscribe((data: ProductModel []) => {
-      console.log("Fetching products");
-      for(var product of data){
-        console.log(product);
-        this.products.push(product);
-      }
-    });
-
-    
-  }
 }

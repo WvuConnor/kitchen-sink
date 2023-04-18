@@ -17,7 +17,7 @@ import { FithLayoutComponent } from './layouts/fith-layout/fith-layout.component
 import { HttpClientModule } from "@angular/common/http";
 import { UserInfoComponent } from './user-info/user-info/user-info.component';
 import { AddProductComponent } from './add-product/add-product.component';
-import { envitoment } from 'src/environments/environment';
+//import { environment } from 'src/environments/environment';
 import { FormsModule } from '@angular/forms';
 
 @NgModule({
@@ -41,7 +41,7 @@ import { FormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    //AngularFireModule.initializeApp(envitoment.firebase),
+    //AngularFireModule.initializeApp(environment.firebase),
     FormsModule
   ],
   providers: [],
