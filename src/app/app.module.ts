@@ -16,6 +16,7 @@ import { FourthLayoutComponent } from './layouts/fourth-layout/fourth-layout.com
 import { FithLayoutComponent } from './layouts/fith-layout/fith-layout.component';
 import { HttpClientModule } from "@angular/common/http";
 import { UserInfoComponent } from './user-info/user-info/user-info.component';
+import { AddProductComponent } from './add-product/add-product.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { UserInfoComponent } from './user-info/user-info/user-info.component';
     ThirdLayoutComponent,
     FourthLayoutComponent,
     FithLayoutComponent,
-    UserInfoComponent
+    UserInfoComponent,
+    AddProductComponent
   ],
   imports: [
     BrowserModule,

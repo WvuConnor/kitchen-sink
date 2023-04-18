@@ -6,6 +6,7 @@ import { SecondLayoutComponent } from './layouts/second-layout/second-layout.com
 import { ThirdLayoutComponent } from './layouts/third-layout/third-layout.component';
 import { FourthLayoutComponent } from './layouts/fourth-layout/fourth-layout.component';
 import { FithLayoutComponent } from './layouts/fith-layout/fith-layout.component';
+import { AddProductComponent } from './add-product/add-product.component';
 
 const routes: Routes = [   
   {
@@ -27,6 +28,10 @@ const routes: Routes = [
   {
     path: 'Prints',
     component: FithLayoutComponent
+  },
+  {
+    path: 'admin',
+    component: AddProductComponent
   }
 ];
 
