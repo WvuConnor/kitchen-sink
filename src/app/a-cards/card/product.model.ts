@@ -8,4 +8,5 @@ export class ProductModel {
       this.img = img;
       this.imgDescription = imgDescription;
   }
+
 }
