@@ -7,6 +7,7 @@ import { ThirdLayoutComponent } from './layouts/third-layout/third-layout.compon
 import { FourthLayoutComponent } from './layouts/fourth-layout/fourth-layout.component';
 import { FithLayoutComponent } from './layouts/fith-layout/fith-layout.component';
 import { AddProductComponent } from './add-product/add-product.component';
+import { AuthComponent } from './auth/auth.component';
 
 const routes: Routes = [   
   {
@@ -32,6 +33,10 @@ const routes: Routes = [
   {
     path: 'admin',
     component: AddProductComponent
+  },
+  {
+  path: 'auth',
+  component: AuthComponent
   }
 ];
 

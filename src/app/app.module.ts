@@ -17,8 +17,9 @@ import { FithLayoutComponent } from './layouts/fith-layout/fith-layout.component
 import { HttpClientModule } from "@angular/common/http";
 import { UserInfoComponent } from './user-info/user-info/user-info.component';
 import { AddProductComponent } from './add-product/add-product.component';
-//import { environment } from 'src/environments/environment';
 import { FormsModule } from '@angular/forms';
+import { AuthComponent } from './auth/auth.component';
+import { enviroment } from 'src/environments/environment.prod';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { FormsModule } from '@angular/forms';
     FourthLayoutComponent,
     FithLayoutComponent,
     UserInfoComponent,
-    AddProductComponent
+    AddProductComponent,
+    AuthComponent,
   ],
   imports: [
     BrowserModule,
