@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "flickr-app-30c57"
+  },
+  "targets": {
+    "flickr-app-30c57": {
+      "hosting": {
+        "kitchen-sink": [
+          "flickr-app-30c57"
+        ]
+      }
+    }
   }
 }

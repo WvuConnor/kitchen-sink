@@ -24,9 +24,10 @@ export class CardComponent implements OnInit {
   ngOnInit(): void {
     this.serivicecomponent.getProducts().subscribe((data: ProductModel []) => {
     console.log("Fetching products");
+    
     for(var product of data){
-    console.log(product);
-    this.products.push(product);
+      console.log(product);
+      this.products.push(product);
     }
   }
 );}

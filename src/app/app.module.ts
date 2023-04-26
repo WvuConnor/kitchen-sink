@@ -19,7 +19,11 @@ import { UserInfoComponent } from './user-info/user-info/user-info.component';
 import { AddProductComponent } from './add-product/add-product.component';
 import { FormsModule } from '@angular/forms';
 import { AuthComponent } from './auth/auth.component';
-import { enviroment } from 'src/environments/environment.prod';
+//import { enviroment } from 'src/environments/environment.prod';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideDatabase,getDatabase } from '@angular/fire/database';
+import { AngularFireModule } from '@angular/fire/compat';
 
 @NgModule({
   declarations: [
@@ -43,8 +47,10 @@ import { enviroment } from 'src/environments/environment.prod';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    //AngularFireModule.initializeApp(environment.firebase),
-    FormsModule
+    AngularFireModule.initializeApp(environment.firebase),
+    FormsModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideDatabase(() => getDatabase())
   ],
   providers: [],
   bootstrap: [AppComponent]

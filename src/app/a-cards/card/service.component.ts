@@ -7,21 +7,20 @@ import{ AngularFireDatabase} from '@angular/fire/compat/database';
 )
 
 export class SeriviceComponent{
-    private baseUrl:string = "https://flickr-app-30c57-default-rtdb.firebaseio.com/";
-    private productsEndpoint: string = "products.json";
+    // private baseUrl:string = "https://flickr-app-30c57-default-rtdb.firebaseio.com/";
+    // private productsEndpoint: string = "Products.json";
 
     constructor(private db: AngularFireDatabase){
 
     }
 
     getProducts(){
-        return this.db.list<ProductModel>("products").valueChanges();
-    }
-    getProduct(index:number){
+        console.log(this.db.list<ProductModel>("Products").valueChanges());
+        return this.db.list<ProductModel>("Products").valueChanges();
         
     }
     addProduct(product: ProductModel){
-        this.db.list<ProductModel>("products").push(product);
+        this.db.list<ProductModel>("Products").push(product);
     }
 }
 // can be used in other places 

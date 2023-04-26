@@ -91,6 +91,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "kitchen-sink:build:production",
+            "firebaseProject": "flickr-app-30c57",
+            "firebaseHostingSite": "flickr-app-30c57"
+          }
         }
       }
     }
