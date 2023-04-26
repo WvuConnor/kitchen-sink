@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-//import { mock_list } from './a-cards/card/mock_list';
-//import { ProductModel } from './a-cards/card/product.model';
+import { mock_list } from './a-cards/card/mock_list';
+import { ProductModel } from './a-cards/card/product.model';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +9,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Flickr';
-  /*
   products: ProductModel[] = [];
 
   constructor(){
@@ -19,5 +18,5 @@ export class AppComponent {
     }
     //code to fetch code from backend using http
   }//take constructor to place on products page
-  */
+  
 }

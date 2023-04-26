@@ -7,9 +7,6 @@ import{ AngularFireDatabase} from '@angular/fire/compat/database';
 )
 
 export class SeriviceComponent{
-    // private baseUrl:string = "https://flickr-app-30c57-default-rtdb.firebaseio.com/";
-    // private productsEndpoint: string = "Products.json";
-
     constructor(private db: AngularFireDatabase){
 
     }

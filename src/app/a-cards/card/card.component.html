@@ -1,7 +1,9 @@
 <div class="card" style="width: 18rem;">
- <img src={{img}} class="card-img-top" alt={{imgDescription}}>
-            <div class="card-body">
-                <p class="card-text">{{description}}</p>
-                <a href="SecondLayout" class="btn btn-primary">pain</a>
-            </div>
+    <div *ngFor="let product of products">
+        <img src={{img}} class="card-img-top" alt={{imgDescription}}>
+        <div class="card-body">
+             <p class="card-text">{{description}}</p>
+            <a href="SecondLayout" class="btn btn-primary">pain</a>
         </div>
+    </div>
+</div>
